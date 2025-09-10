@@ -52,7 +52,7 @@ begin
    Items(Count).Weight := Plane.Empty_Weight;
    Items(Count).Arm    := Plane.Empty_Arm;
 
-   -- Ask user for fuel
+   -- Ask user for fuel (why did this one take me 7 fucking hours to fix, i had to rewrite this thing 10 fucking times)
    declare
       Fuel_Weight, Fuel_Arm : Float;
    begin
@@ -64,7 +64,7 @@ begin
       Skip_Line;
 
       Count := Count + 1;
-      Items(Count).Name   := To_Unbounded_String("Fuel");  -- This thing refused to work for FAR too long, and doing anything to this breaks everything
+      Items(Count).Name   := To_Unbounded_String("Fuel");
       Items(Count).Weight := Fuel_Weight;
       Items(Count).Arm    := Fuel_Arm;
    end;
