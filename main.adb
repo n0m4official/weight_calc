@@ -6,7 +6,7 @@ procedure Main is
 
    -- Each item loaded in the plane
    type Load_Item is record
-      Name   : Unbounded_String;
+      Name   : Unbounded_String;      -- this fucking thing took me 7 hours to fix, and changing it broke everything. IDFK how or why.
       Weight : Float;
       Arm    : Float;
    end record;
@@ -64,7 +64,7 @@ begin
       Skip_Line;
 
       Count := Count + 1;
-      Items(Count).Name   := To_Unbounded_String("Fuel");
+      Items(Count).Name   := To_Unbounded_String("Fuel");  -- This thing refused to work for FAR too long, and doing anything to this breaks everything
       Items(Count).Weight := Fuel_Weight;
       Items(Count).Arm    := Fuel_Arm;
    end;
