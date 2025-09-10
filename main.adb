@@ -52,7 +52,7 @@ begin
    Items(Count).Weight := Plane.Empty_Weight;
    Items(Count).Arm    := Plane.Empty_Arm;
 
-   -- Ask user for fuel (why did this one take me 7 fucking hours to fix, i had to rewrite this thing 10 fucking times)
+   -- Ask user for fuel (why did this one take me 7 fucking hours to fix, i had to rewrite this shit 10 fucking times)
    declare
       Fuel_Weight, Fuel_Arm : Float;
    begin
